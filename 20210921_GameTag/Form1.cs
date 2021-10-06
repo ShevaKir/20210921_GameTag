@@ -28,12 +28,12 @@ namespace _20210921_GameTag
                 {
                     Button button = new Button();
                     button.Location = new Point(j * SHIFT, i * SHIFT);
-                    button.Name = string.Format("btn{0}", _countButton);
+                    button.Name = string.Format("btn{0}", _game[i, j].NumberCell);
                     button.Size = new Size(50, 50);
                     button.TabIndex = _countButton;
                     button.Text = string.Format("{0}", _game[i, j].NumberCell);
                     button.UseVisualStyleBackColor = true;
-                    button.Click += new System.EventHandler(this.btn_Click);
+                    button.Click += new EventHandler(btn_Click);
                     button.FlatAppearance.BorderSize = 0;
                     button.FlatStyle = FlatStyle.Flat;
                     this.Controls.Add(button);
@@ -41,7 +41,7 @@ namespace _20210921_GameTag
                 }
             }
 
-            _game.action(0,1);
+            _game.Shuffle();
             ShowButton();
             InitializeComponent();
         }
@@ -58,7 +58,7 @@ namespace _20210921_GameTag
                         {
                             if(_game[i, j].NumberCell == int.Parse(button.Text))
                             {
-                                _game.action(i, j);
+                                _game.Action(i, j);
                                 ShowButton();
                             }
                         }
@@ -84,9 +84,5 @@ namespace _20210921_GameTag
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

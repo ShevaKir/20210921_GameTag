@@ -10,8 +10,9 @@ namespace _20210921_GameTag
     {
         private const int SIZE = 4;
         private Cell[,] _cells;
-        private int _countCell = 0;
         private Cell[,] _winningCell;
+        private int _countCell = 1;
+ 
 
         public GameField(int size = SIZE)
         {
@@ -50,12 +51,24 @@ namespace _20210921_GameTag
                     _countCell++;
                 }
             }
+            _cells[SIZE - 1, SIZE - 1] = new Cell(0);
 
             _winningCell = new Cell[SIZE, SIZE];
             Array.Copy(_cells, _winningCell, _cells.Length);
         }
 
-        public void action(int i, int j)
+        public void Shuffle()
+        {
+            int count = 1000;
+
+            while (count > 0)
+            {
+                Action(RandomAction.RandomIndex(), RandomAction.RandomIndex());
+                count--;
+            }
+        }
+
+        public void Action(int i, int j)
         {
             for (int x = i - 1; x <= i + 1; x++)
             {
