@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20210921_GameTag", "20210921_GameTag\20210921_GameTag.csproj", "{E700D248-27D8-43D4-82CF-525C7EFD6D12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20211013_ConsoleGameTag", "20211013_ConsoleGameTag\20211013_ConsoleGameTag.csproj", "{5E9AB8F3-67A8-4CCC-82B6-D7D45536BC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicGameLib", "LogicGameLib\LogicGameLib.csproj", "{18D3C937-56B8-4923-9844-5D8A3527A389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E700D248-27D8-43D4-82CF-525C7EFD6D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E700D248-27D8-43D4-82CF-525C7EFD6D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E700D248-27D8-43D4-82CF-525C7EFD6D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9AB8F3-67A8-4CCC-82B6-D7D45536BC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9AB8F3-67A8-4CCC-82B6-D7D45536BC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9AB8F3-67A8-4CCC-82B6-D7D45536BC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9AB8F3-67A8-4CCC-82B6-D7D45536BC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D3C937-56B8-4923-9844-5D8A3527A389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D3C937-56B8-4923-9844-5D8A3527A389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D3C937-56B8-4923-9844-5D8A3527A389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D3C937-56B8-4923-9844-5D8A3527A389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

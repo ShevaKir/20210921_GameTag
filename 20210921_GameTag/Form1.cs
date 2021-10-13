@@ -28,7 +28,7 @@ namespace _20210921_GameTag
                 {
                     Button button = new Button();
                     button.Location = new Point(j * SHIFT, i * SHIFT);
-                    button.Name = string.Format("btn{0}", _game[i, j].NumberCell);
+                    button.Name = string.Format("{0}", _game[i, j].NumberCell);
                     button.Size = new Size(50, 50);
                     button.TabIndex = _countButton;
                     button.Text = string.Format("{0}", _game[i, j].NumberCell);
@@ -60,6 +60,7 @@ namespace _20210921_GameTag
                             {
                                 _game.Action(i, j);
                                 ShowButton();
+                                break;
                             }
                         }
                     }
