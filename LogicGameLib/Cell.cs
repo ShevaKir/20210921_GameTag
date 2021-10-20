@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20210921_GameTag
+namespace LogicGameLib
 {
-    class Cell
+    public class Cell
     {
         private int _numberCell;
 

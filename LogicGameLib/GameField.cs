@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20210921_GameTag
+namespace LogicGameLib
 {
-    class GameField
+    public class GameField
     {
         private const int SIZE = 4;
+        private const int DEFAUNT_COUNT = 500;
         private Cell[,] _cells;
         private Cell[,] _winningCell;
         private int _countCell = 1;
@@ -57,10 +58,8 @@ namespace _20210921_GameTag
             Array.Copy(_cells, _winningCell, _cells.Length);
         }
 
-        public void Shuffle()
+        public void Shuffle(int count = DEFAUNT_COUNT)
         {
-            int count = 1000;
-
             while (count > 0)
             {
                 Action(RandomAction.RandomIndex(), RandomAction.RandomIndex());

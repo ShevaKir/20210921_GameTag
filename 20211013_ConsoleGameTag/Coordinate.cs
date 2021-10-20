@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicGameLib
+namespace _20211013_ConsoleGameTag
 {
-    public class Class1
+    struct Coordinate
     {
+        public int x;
+        public int y;
     }
 }

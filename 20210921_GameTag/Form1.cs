@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogicGameLib;
 
 namespace _20210921_GameTag
 {
@@ -56,7 +57,7 @@ namespace _20210921_GameTag
                     {
                         for (int j = 0; j < _game.Size; j++)
                         {
-                            if(_game[i, j].NumberCell == int.Parse(button.Text))
+                            if(_game[i, j].NumberCell == 0)
                             {
                                 _game.Action(i, j);
                                 ShowButton();

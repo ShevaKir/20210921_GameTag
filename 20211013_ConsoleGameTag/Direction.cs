@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace _20211013_ConsoleGameTag
 {
-    class Program
+    enum Direction
     {
-        static void Main(string[] args)
-        {
-            Game game = new Game();
-            game.Run();
-        }
+        Up,
+        Right,
+        Down,
+        Left
     }
 }
